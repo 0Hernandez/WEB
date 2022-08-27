@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo #4 Formularios</title>
+</head>
+<body>
+    <main>
+        <section id="formInput">
+            <form action="">
+                <label for="nombre">
+                    <span>¿Cual es tu nombre</span>
+                    <input type="text" id="nombre" placeholder="Tu nombre" name="nombre" autocomplete="name" required>
+                </label>
+
+                <label for="inicioPlatzi">
+                    <span>¿cuando inicio platzi y en que hora hizo el pago de membresia? </span>
+                    <input type="datetime-local" id="inicioPlatzi" name="inicioPlatzi" required >
+                </label>
+
+                <label for="edad">
+                    <span>¿Cual es tu edad</span>
+                    <input type="number" id="edad" name="edad" placeholder="Tu edad" required autocomplete="cc-number">
+                </label>
+
+                <input list="cursos" name="cursos">
+                <datalist id="cursos" >
+                    <option value="JavaScript"></option>
+                    <option value="Css3"></option>
+                    <option value="HTML"></option>
+                    <option value="PHP"></option>
+                </datalist>
+
+                <input type="submit" value="Guardar">
+
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>
